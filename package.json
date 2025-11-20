@@ -1,0 +1,33 @@
+{
+  "name": "@openmfp/create-portal",
+  "version": "1.0.0",
+  "description": "CLI tool for scaffolding OpenMFP Portal projects",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openmfp/create-portal.git"
+  },
+  "bin": "./generate-portal.js",
+  "author": "OpenMFP",
+  "license": "Apache-2.0",
+  "type": "module",
+  "keywords": [
+    "openmfp",
+    "portal",
+    "cli",
+    "generator",
+    "create"
+  ],
+  "engines": {
+    "node": ">=24.0.0",
+    "npm": ">=11.0.0"
+  },
+  "files": [
+    "generate-portal.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "bugs": {
+    "url": "https://github.com/openmfp/create-portal/issues"
+  },
+  "homepage": "https://github.com/openmfp/create-portal#readme"
+}
