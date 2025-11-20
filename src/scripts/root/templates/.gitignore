@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.angular/
+.env
+*.log
+coverage/
+.DS_Store
+.yalc/
+yalc.lock
