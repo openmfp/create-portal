@@ -1,0 +1,8 @@
+node_modules/
+test-portal-*
+test-backend-*
+test-frontend-*
+test-root-*
+*.log
+.DS_Store
+coverage/

@@ -8,7 +8,8 @@ import { generateFrontendFiles } from "./scripts/frontend/frontend-generator.js"
 import { generateRootFiles } from "./scripts/root/root-generator.js";
 
 const args = process.argv.slice(2);
-const projectName = args[0] || "my-portal";
+const skipInstall = args.includes("--skip-install");
+const projectName = args.find((arg) => !arg.startsWith("--")) || "my-portal";
 
 console.log(`\n🚀 Creating portal: ${projectName}\n`);
 
@@ -68,6 +69,17 @@ generateFrontendFiles(projectDir, writeFile, createDir);
 
 console.log("✅ Project structure created successfully!");
 displayProjectStructure(projectDir);
+
+if (skipInstall) {
+  console.log("\n⏭️  Skipping dependency installation\n");
+  console.log("🎉 Portal created successfully!\n");
+  console.log("To get started:\n");
+  console.log(`  cd ${projectName}`);
+  console.log("  npm install");
+  console.log("  npm start\n");
+  process.exit(0);
+}
+
 console.log("\n📦 Installing dependencies...\n");
 
 process.chdir(projectDir);

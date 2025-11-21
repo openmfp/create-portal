@@ -194,6 +194,47 @@ Ensure you have Node.js version 24 or higher:
 node --version
 ```
 
+## Development
+
+### Running Tests
+
+This project includes comprehensive tests for the CLI tool and generators:
+
+```bash
+npm test
+```
+
+Run tests in watch mode:
+
+```bash
+npm run test:watch
+```
+
+### Test Coverage
+
+The test suite includes:
+
+- **CLI Tests**: End-to-end tests for the project generation process
+- **Generator Tests**: Unit tests for backend, frontend, and root generators
+- **Structure Tests**: Validation of generated project structure and files
+
+All tests use Node.js built-in test runner (requires Node.js >= 18).
+
+### Skip Dependency Installation
+
+For testing or development purposes, you can skip automatic dependency installation:
+
+```bash
+npx @openmfp/create-portal my-portal --skip-install
+```
+
+Then manually install dependencies:
+
+```bash
+cd my-portal
+npm install
+```
+
 ## Technologies
 
 ### Core Technologies

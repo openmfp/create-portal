@@ -21,6 +21,10 @@
     "node": ">=24.0.0",
     "npm": ">=11.0.0"
   },
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
   "files": [
     "src/",
     "README.md",
