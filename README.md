@@ -194,6 +194,47 @@ Ensure you have Node.js version 24 or higher:
 node --version
 ```
 
+## Development
+
+### Running Tests
+
+This project includes comprehensive tests for the CLI tool and generators:
+
+```bash
+npm test
+```
+
+Run tests in watch mode:
+
+```bash
+npm run test:watch
+```
+
+### Test Coverage
+
+The test suite includes:
+
+- **CLI Tests**: End-to-end tests for the project generation process
+- **Generator Tests**: Unit tests for backend, frontend, and root generators
+- **Structure Tests**: Validation of generated project structure and files
+
+All tests use Node.js built-in test runner (requires Node.js >= 18).
+
+### Skip Dependency Installation
+
+For testing or development purposes, you can skip automatic dependency installation:
+
+```bash
+npx @openmfp/create-portal my-portal --skip-install
+```
+
+Then manually install dependencies:
+
+```bash
+cd my-portal
+npm install
+```
+
 ## Technologies
 
 ### Core Technologies
@@ -214,15 +255,24 @@ node --version
 - **SAP Fundamental NGX** - Enterprise UI components
 - **UI5 Web Components** - SAP UI5 components for Angular
 
-## License
-
-ISC
-
 ## Repository
 
 - GitHub: [@openmfp/create-portal](https://github.com/openmfp/create-portal)
 - npm: [@openmfp/create-portal](https://www.npmjs.com/package/@openmfp/create-portal)
 - Issues: [Report issues](https://github.com/openmfp/create-portal/issues)
+
+## Contributing
+
+Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file in this repository for instructions on how to contribute to openMFP.
+
+## Code of Conduct
+
+Please refer to the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) file in this repository for information on the expected Code of Conduct for contributing to openMFP.
+
+## Licensing
+
+Copyright 2025 SAP SE or an SAP affiliate company and openMFP contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/openmfp/portal).
+
 
 ## Support
 
