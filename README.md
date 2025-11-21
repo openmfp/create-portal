@@ -63,11 +63,11 @@ cd ../backend && npm install
 
 ## Contributing
 
-Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file in this repository for instructions on how to contribute to openMFP.
+Please refer to the [CONTRIBUTING](CONTRIBUTING.md) file in this repository for instructions on how to contribute to openMFP.
 
 ## Code of Conduct
 
-Please refer to the [CODE_OF_CONDUCT.md](https://github.com/openmfp/create-portal?tab=coc-ov-file) file in this repository for information on the expected Code of Conduct for contributing to openMFP.
+Please refer to the [CODE_OF_CONDUCT.md](https://github.com/openmfp/create-portal?tab=coc-ov-file) of NeoNephos for information on the expected Code of Conduct for contributing to openMFP.
 
 ## Licensing
 
