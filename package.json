@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git+https://github.com/openmfp/create-portal.git"
   },
-  "bin": "./generate-portal.js",
+  "bin": "./src/generate-portal.js",
   "author": "OpenMFP",
   "license": "Apache-2.0",
   "type": "module",
@@ -22,7 +22,7 @@
     "npm": ">=11.0.0"
   },
   "files": [
-    "generate-portal.js",
+    "src/",
     "README.md",
     "LICENSE"
   ],
