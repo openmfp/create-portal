@@ -1,0 +1,46 @@
+name: pipeline
+
+permissions:
+  contents: write
+  id-token: write
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3
+      - uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903
+        with:
+          node-version: '24'
+          registry-url: https://registry.npmjs.org
+      - run: npm test
+
+  # createVersion:
+  #   if: github.ref == 'refs/heads/main'
+  #   needs: [test]
+  #   uses: openmfp/gha/.github/workflows/job-create-version.yml@main
+
+  # publish:
+  #   if: github.ref == 'refs/heads/main'
+  #   needs: [createVersion]
+  #   uses: openmfp/gha/.github/workflows/job-node-publish.yml@main
+  #   secrets: inherit
+  #   with:
+  #     version: ${{ needs.createVersion.outputs.strictVersion }}
+  #     workingDirectory: './'
+  #     publishFromDist: false
+  #     node_version: '24'
+  #     environment: 'production'
