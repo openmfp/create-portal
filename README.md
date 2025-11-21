@@ -71,7 +71,7 @@ Please refer to the [CODE_OF_CONDUCT.md](https://github.com/openmfp/create-porta
 
 ## Licensing
 
-Please see our [LICENSE](https://github.com/openmfp/create-portal?tab=coc-ov-file) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/openmfp/create-portal).
+Please see our [LICENSE](https://github.com/openmfp/create-portal?tab=Apache-2.0-1-ov-file) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/openmfp/create-portal).
 
 ## Support
 
