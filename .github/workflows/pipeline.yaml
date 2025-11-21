@@ -28,19 +28,19 @@ jobs:
           registry-url: https://registry.npmjs.org
       - run: npm test
 
-  createVersion:
-    if: github.ref == 'refs/heads/main'
-    needs: [test]
-    uses: openmfp/gha/.github/workflows/job-create-version.yml@main
+  # createVersion:
+  #   if: github.ref == 'refs/heads/main'
+  #   needs: [test]
+  #   uses: openmfp/gha/.github/workflows/job-create-version.yml@main
 
-  publish:
-    if: github.ref == 'refs/heads/main'
-    needs: [createVersion]
-    uses: openmfp/gha/.github/workflows/job-node-publish.yml@main
-    secrets: inherit
-    with:
-      version: ${{ needs.createVersion.outputs.strictVersion }}
-      workingDirectory: './'
-      publishFromDist: false
-      node_version: '24'
-      environment: 'production'
+  # publish:
+  #   if: github.ref == 'refs/heads/main'
+  #   needs: [createVersion]
+  #   uses: openmfp/gha/.github/workflows/job-node-publish.yml@main
+  #   secrets: inherit
+  #   with:
+  #     version: ${{ needs.createVersion.outputs.strictVersion }}
+  #     workingDirectory: './'
+  #     publishFromDist: false
+  #     node_version: '24'
+  #     environment: 'production'
