@@ -214,15 +214,24 @@ node --version
 - **SAP Fundamental NGX** - Enterprise UI components
 - **UI5 Web Components** - SAP UI5 components for Angular
 
-## License
-
-ISC
-
 ## Repository
 
 - GitHub: [@openmfp/create-portal](https://github.com/openmfp/create-portal)
 - npm: [@openmfp/create-portal](https://www.npmjs.com/package/@openmfp/create-portal)
 - Issues: [Report issues](https://github.com/openmfp/create-portal/issues)
+
+## Contributing
+
+Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file in this repository for instructions on how to contribute to openMFP.
+
+## Code of Conduct
+
+Please refer to the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) file in this repository for information on the expected Code of Conduct for contributing to openMFP.
+
+## Licensing
+
+Copyright 2025 SAP SE or an SAP affiliate company and openMFP contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/openmfp/portal).
+
 
 ## Support
 
