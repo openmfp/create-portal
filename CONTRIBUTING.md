@@ -15,17 +15,36 @@ You are welcome to contribute with your pull requests. These steps explain the c
 1. Make sure the tests pass. Our GitHub actions pipeline is running the unit and e2e tests for your PR and will indicate any issues.
 1. Sign the Developer Certificate of Origin (DCO).
 
-
-### Building
-
-Run `npm build` to build the project.
-The build artifacts will be stored in the `dist/` directory.
-
 ## Testing
 
-> **NOTE:** You should always add tests, if you are adding code to our repository.
+### Running Tests
 
-Run `npm test` to execute the unit tests via [Jest](https://jestjs.io/) in the root directory of the repository.
+This project includes comprehensive tests for the CLI tool and generators:
+
+```bash
+npm test
+```
+
+Run tests in watch mode:
+
+```bash
+npm run test:watch
+```
+
+### Skip Dependency Installation
+
+For testing or development purposes, you can skip automatic dependency installation:
+
+```bash
+npx @openmfp/create-portal my-portal --skip-install
+```
+
+Then manually install dependencies:
+
+```bash
+cd my-portal
+npm install
+```
 
 ## Issues
 We use GitHub issues to track bugs. Please ensure your description is
