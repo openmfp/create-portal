@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   pipe:
-    uses: platform-mesh/.github/.github/workflows/pipeline-node-module.yml@main
+    uses: openmfp/gha/.github/workflows/pipeline-node-module.yml@main
     secrets: inherit
     with:
       publish: false
