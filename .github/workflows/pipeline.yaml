@@ -9,7 +9,10 @@ on:
       - synchronize
 
 permissions:
-  contents: read
+  # Write access is used for tag creation and version commits
+  contents: write
+  # Needed for provenance creation when publishing to npmjs
+  id-token: write
 
 concurrency:
   group: ${{ github.ref }}
