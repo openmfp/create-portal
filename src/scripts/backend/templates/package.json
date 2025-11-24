@@ -16,16 +16,16 @@
     "@nestjs/core": "^11.1.8",
     "@nestjs/platform-express": "^11.1.8",
     "@nestjs/serve-static": "^5.0.4",
-    "@openmfp/portal-server-lib": "^0.163.2",
-    "dotenv": "^17.2.3",
-    "reflect-metadata": "^0.2.2",
+    "@openmfp/portal-server-lib": "0.163.3",
+    "dotenv": "17.2.3",
+    "reflect-metadata": "0.2.2",
     "rxjs": "^7.8.1"
   },
   "devDependencies": {
     "@nestjs/cli": "^11.0.10",
     "@nestjs/schematics": "^11.0.9",
-    "@types/express": "^5.0.5",
-    "@types/node": "^24.10.1",
+    "@types/express": "5.0.5",
+    "@types/node": "24.10.1",
     "typescript": "^5.8.0"
   },
   "type": "module"
