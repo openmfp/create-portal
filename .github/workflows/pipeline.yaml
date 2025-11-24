@@ -18,3 +18,4 @@ jobs:
     secrets: inherit
     with:
       publish: false
+      hasBuild: false
