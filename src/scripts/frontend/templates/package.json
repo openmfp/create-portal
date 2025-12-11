@@ -32,7 +32,7 @@
     "@luigi-project/core": "2.26.0",
     "@luigi-project/plugin-auth-oauth2": "2.26.0",
     "@openmfp/portal-ui-lib": "0.184.18",
-    "@ui5/webcomponents-ngx": "0.5.8",
+    "@ui5/webcomponents-ngx": "0.5.9",
     "jmespath": "0.16.0",
     "jwt-decode": "4.0.0",
     "lodash": "4.17.21",
