@@ -40,8 +40,8 @@
     "@angular/build": "^20.0.0",
     "@angular/cli": "^20.0.0",
     "@angular/compiler-cli": "^20.0.0",
-    "nodemon": "^3.1.11",
-    "rimraf": "^6.1.2",
+    "nodemon": "3.1.11",
+    "rimraf": "6.1.2",
     "typescript": "~5.8.0"
   }
 }
