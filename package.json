@@ -19,7 +19,7 @@
   ],
   "engines": {
     "node": "25.4.0",
-    "npm": "11.7.0"
+    "npm": "11.8.0"
   },
   "scripts": {
     "test": "node --test",
