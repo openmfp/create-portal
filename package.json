@@ -18,7 +18,7 @@
     "create"
   ],
   "engines": {
-    "node": "25.6.0",
+    "node": "25.6.1",
     "npm": "11.9.0"
   },
   "scripts": {
