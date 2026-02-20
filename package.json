@@ -23,7 +23,7 @@
   },
   "scripts": {
     "test": "npm run test:unit && npm run test:integration",
-    "test:unit": "node --test test/generate-portal.test.js test/generators.test.js test/helpers.js",
+    "test:unit": "node --test test/generate-portal.test.js test/generators.test.js",
     "test:integration": "node --test test/generate-portal.integration.test.js",
     "test:watch": "node --test --watch"
   },

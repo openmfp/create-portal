@@ -1,4 +1,4 @@
-import { execSync } from "child_process";
+import { execFileSync } from "child_process";
 import assert from "node:assert";
 import { afterEach, beforeEach, describe, it } from "node:test";
 import path from "path";
@@ -21,9 +21,10 @@ function tailLines(text, maxLines = 120) {
   return text.split("\n").slice(-maxLines).join("\n").trim();
 }
 
-function runStep({ stepName, command, cwd, timeout }) {
+function runStep({ stepName, file, args, cwd, timeout }) {
+  const command = [file, ...(args ?? [])].join(" ");
   try {
-    execSync(command, {
+    execFileSync(file, args ?? [], {
       cwd,
       stdio: "pipe",
       encoding: "utf-8",
@@ -75,31 +76,36 @@ describe("create-portal integration", () => {
 
       runStep({
         stepName: "generate portal",
-        command: `node ${cliPath} ${smokeProjectName} --skip-install`,
+        file: "node",
+        args: [cliPath, smokeProjectName, "--skip-install"],
         cwd: testDir,
         timeout: 120000,
       });
       runStep({
         stepName: "install root dependencies",
-        command: "npm install",
+        file: "npm",
+        args: ["install"],
         cwd: projectDir,
         timeout: 600000,
       });
       runStep({
         stepName: "install frontend dependencies",
-        command: "npm run npm:install:ui",
+        file: "npm",
+        args: ["run", "npm:install:ui"],
         cwd: projectDir,
         timeout: 600000,
       });
       runStep({
         stepName: "install backend dependencies",
-        command: "npm run npm:install:server",
+        file: "npm",
+        args: ["run", "npm:install:server"],
         cwd: projectDir,
         timeout: 600000,
       });
       runStep({
         stepName: "build generated portal",
-        command: "npm run build",
+        file: "npm",
+        args: ["run", "build"],
         cwd: projectDir,
         timeout: 600000,
       });
