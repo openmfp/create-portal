@@ -23,5 +23,5 @@ jobs:
     uses: openmfp/gha/.github/workflows/pipeline-node-module.yml@main
     secrets: inherit
     with:
-      publish: false
+      publish: true
       hasBuild: false
