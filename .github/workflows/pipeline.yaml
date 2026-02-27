@@ -25,3 +25,4 @@ jobs:
     with:
       publish: true
       hasBuild: false
+      environment: npmjs:@openmfp/create-portal
