@@ -76,3 +76,6 @@ Please see our [LICENSE](https://github.com/openmfp/create-portal?tab=Apache-2.0
 ## Support
 
 For questions and support, please open an issue on the GitHub repository.
+
+
+<p align="center"><img alt="Bundesministerium für Wirtschaft und Energie (BMWE)-EU funding logo" src="https://apeirora.eu/assets/img/BMWK-EU.png" width="400"/></p>
