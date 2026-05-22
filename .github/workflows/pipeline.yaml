@@ -20,7 +20,7 @@ concurrency:
 
 jobs:
   pipe:
-    uses: openmfp/gha/.github/workflows/pipeline-node-module.yml@41c5cde35953415b597e9a3890c9f7013c0d509b # main
+    uses: openmfp/gha/.github/workflows/pipeline-node-module.yml@7f8931fa9224ae3666972156a087a4eb07838c8a # main
     secrets: inherit
     with:
       publish: true
