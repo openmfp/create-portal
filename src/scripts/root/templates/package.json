@@ -20,7 +20,7 @@
     "start:watch": "concurrently 'npm:start:server:watch' 'npm:build:ui:watch'"
   },
   "devDependencies": {
-    "concurrently": "9.2.1"
+    "concurrently": "10.0.0"
   },
   "private": true
 }
