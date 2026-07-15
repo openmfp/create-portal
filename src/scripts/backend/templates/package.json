@@ -16,7 +16,7 @@
     "@nestjs/core": "^11.1.9",
     "@nestjs/platform-express": "^11.1.9",
     "@nestjs/serve-static": "^5.0.4",
-    "@openmfp/portal-server-lib": "^0.163.25",
+    "@openmfp/portal-server-lib": "^0.164.0",
     "dotenv": "^17.4.2",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1"
