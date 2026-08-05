@@ -4,7 +4,7 @@
   "description": "OpenMFP Portal",
   "engines": {
     "node": "25.9.0",
-    "npm": "12.0.1"
+    "npm": "12.0.2"
   },
   "scripts": {
     "npm:install:ui": "cd frontend && npm install",

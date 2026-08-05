@@ -19,7 +19,7 @@
   ],
   "engines": {
     "node": "25.9.0",
-    "npm": "12.0.1"
+    "npm": "12.0.2"
   },
   "scripts": {
     "test": "npm run test:unit && npm run test:integration",
