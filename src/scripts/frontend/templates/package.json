@@ -23,7 +23,7 @@
     "@angular/localize": "21.2.20",
     "@angular/platform-browser": "21.2.20",
     "@angular/platform-browser-dynamic": "21.2.20",
-    "@angular/router": "21.2.20",
+    "@angular/router": "21.2.24",
     "@luigi-project/client": "2.27.0",
     "@luigi-project/core": "2.27.0",
     "@luigi-project/plugin-auth-oauth2": "2.27.0",
