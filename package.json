@@ -1,6 +1,6 @@
 {
   "name": "@openmfp/create-portal",
-  "version": "0.1.212",
+  "version": "0.1.213",
   "description": "CLI tool for scaffolding OpenMFP Portal projects",
   "repository": {
     "type": "git",
