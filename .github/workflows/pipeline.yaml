@@ -21,7 +21,8 @@ concurrency:
 jobs:
   pipe:
     uses: openmfp/gha/.github/workflows/pipeline-node-module.yml@e46079a5d3e7bf39638e381714e0cf43c96860ef # main
-    secrets: inherit
+    secrets:
+      OPENMFP_PUBLISHER_PRIVATE_KEY: ${{ secrets.OPENMFP_PUBLISHER_PRIVATE_KEY }}
     with:
       publish: true
       hasBuild: false
